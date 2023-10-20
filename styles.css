@@ -13,6 +13,7 @@ body {
 /* Define the container for the sidebar and content */
 .container {
     display: flex;
+    min-height: 100vh;
 }
 
 /* Style the sidebar */
