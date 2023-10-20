@@ -3,52 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sticky Header Example</title>
+    <title>My Website</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
         }
 
-        .header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
+        .sidebar {
+            height: 100%;
+            width: 250px;
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            z-index: 100;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            margin-bottom: 10px;
         }
 
         .content {
-            margin-top: 80px; /* Ensure content is below the header */
+            margin-left: 270px; /* Adjust for the sidebar width and some spacing */
             padding: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>My Sticky Header</h1>
+    <div class="sidebar">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
     </div>
 
     <div class="content">
-        <h2>Scroll down to see the effect</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-        <!-- Add more content here -->
-    </div>
+        <h1>About</h1>
+        <p>This is the About page content. You can provide information about yourself or your website here.</p>
 
-    <script>
-        window.onscroll = function() {
-            // When the user scrolls down 80px from the top of the document, add a shadow to the header
-            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-                document.querySelector(".header").style.boxShadow = "0 2px 4px rgba(0, 0, 0, 0.2)";
-            } else {
-                // Remove the shadow when the user is at the top of the document
-                document.querySelector(".header").style.boxShadow = "none";
-            }
-        };
-    </script>
+        <h1 id="publications">Publications</h1>
+        <p>This is the Publications page content. You can list your publications or articles here.</p>
+    </div>
 </body>
 </html>
