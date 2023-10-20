@@ -1,25 +1,31 @@
-/* styles.css */
-
-.body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles to ensure consistency */
+body, h1, p {
     margin: 0;
     padding: 0;
 }
 
+/* Apply a background color to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Define the container for the sidebar and content */
+.container {
+    display: flex;
+}
+
+/* Style the sidebar */
 .sidebar {
-    height: 100%;
     width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
     background-color: #333;
     color: #fff;
     padding: 20px;
 }
 
 .sidebar img {
-    max-width: 100%; /* Ensure the image doesn't overflow the sidebar */
-    margin-bottom: 20px; /* Add spacing below the image */
+    display: block;
+    margin: 0 auto 20px; /* Center the image and add some spacing */
 }
 
 .sidebar a {
@@ -29,11 +35,12 @@
     margin-bottom: 10px;
 }
 
-.content {
-    margin-left: 270px; /* Adjust for the sidebar width and some spacing */
-    padding: 20px;
+.sidebar a.active {
+    background-color: #555; /* Highlight the active link */
 }
 
-.sidebar a.active {
-    background-color: #555;
+/* Style the content area */
+.content {
+    flex: 1; /* Take up remaining width in the container */
+    padding: 20px;
 }
