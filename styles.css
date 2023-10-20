@@ -51,6 +51,7 @@ body {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack sidebar and content on top of each other */
+        min-height: 50vh
     }
 
     .sidebar {
