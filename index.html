@@ -1,52 +1,25 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-
-        .sidebar {
-            height: 100%;
-            width: 250px;
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-        }
-
-        .sidebar img {
-            max-width: 100%; /* Ensure the image doesn't overflow the sidebar */
-            margin-bottom: 20px; /* Add spacing below the image */
-        }
-
-        .sidebar a {
-            display: block;
-            text-decoration: none;
-            color: #fff;
-            margin-bottom: 10px;
-        }
-
-        .content {
-            margin-left: 270px; /* Adjust for the sidebar width and some spacing */
-            padding: 20px;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <img src="your-image.jpg" alt="Profile Image" width="200" height="200">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="publications.html">Publications</a>
-    </div>
+    <div class="container">
+        <div class="sidebar">
+            <img src="your-image.jpg" alt="Profile Image" width="200" height="200">
+            <a href="index.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="publications.html">Publications</a>
+        </div>
 
+        <div class="content">
+            <h1>Welcome to My Website</h1>
+            <p>This is the homepage of my website. You can navigate to the About and Publications pages using the links in the sidebar.</p>
+        </div>
+    </div>
 </body>
 </html>

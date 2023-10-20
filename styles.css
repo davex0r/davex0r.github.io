@@ -1,0 +1,4 @@
+/* styles.css */
+.sidebar a.active {
+    background-color: #555;
+}
