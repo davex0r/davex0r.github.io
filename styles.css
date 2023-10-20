@@ -1,4 +1,39 @@
 /* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.sidebar img {
+    max-width: 100%; /* Ensure the image doesn't overflow the sidebar */
+    margin-bottom: 20px; /* Add spacing below the image */
+}
+
+.sidebar a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.content {
+    margin-left: 270px; /* Adjust for the sidebar width and some spacing */
+    padding: 20px;
+}
+
 .sidebar a.active {
     background-color: #555;
 }
