@@ -18,8 +18,35 @@
 
         <div class="content">
             <h1>Publications</h1>
-            <p>This is the Publications page. You can list your publications or articles here.</p>
+            <ul id="publications-list">
+                <!-- The parsed publications will be inserted here using JavaScript -->
+            </ul>
         </div>
     </div>
+
+    <script>
+        // Define the URL of your BibTeX file
+        const bibtexFileURL = 'publications.bib';
+
+        // Function to fetch and parse the BibTeX file
+        async function fetchAndParseBibTeX() {
+            const response = await fetch(bibtexFileURL);
+            const bibtexText = await response.text();
+
+            // Parse the BibTeX text using the 'bibtex-parse' library
+            const parsedData = bibtexParse.toJSON(bibtexText);
+
+            // Create an HTML list of publications
+            const publicationsList = document.getElementById('publications-list');
+            parsedData.forEach(entry => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${entry.entryTags.title}</strong>, ${entry.entryTags.author}, ${entry.entryTags.year}`;
+                publicationsList.appendChild(li);
+            });
+        }
+
+        // Call the function to fetch and parse the BibTeX file
+        fetchAndParseBibTeX();
+    </script>
 </body>
 </html>
