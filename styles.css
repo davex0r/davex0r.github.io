@@ -51,11 +51,11 @@ body {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Stack sidebar and content on top of each other */
-        max-height: 50vh
     }
 
     .sidebar {
         width: 100%; /* Make the sidebar take the full width of the screen */
+        max-height: 50vh;
         padding: 10px; /* Reduce padding for smaller screens */
     }
 
