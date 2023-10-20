@@ -22,6 +22,11 @@
             padding: 20px;
         }
 
+        .sidebar img {
+            max-width: 100%; /* Ensure the image doesn't overflow the sidebar */
+            margin-bottom: 20px; /* Add spacing below the image */
+        }
+
         .sidebar a {
             display: block;
             text-decoration: none;
@@ -37,16 +42,11 @@
 </head>
 <body>
     <div class="sidebar">
-        <a href="#about">About</a>
-        <a href="#publications">Publications</a>
+        <img src="your-image.jpg" alt="Profile Image" width="200" height="200">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="publications.html">Publications</a>
     </div>
 
-    <div class="content">
-        <h1>About</h1>
-        <p>This is the About page content. You can provide information about yourself or your website here.</p>
-
-        <h1 id="publications">Publications</h1>
-        <p>This is the Publications page content. You can list your publications or articles here.</p>
-    </div>
 </body>
 </html>
