@@ -28,7 +28,11 @@
             <p>This is the Publications page. You can list your publications or articles here.</p>
             
             <div class="bibtex_template">
-                <span class="title"></span>
+                <span class="if journal !nolink">
+                    <a class="bibtexVar" href="+URLORDEFAULT+" extra="BIBTEXKEY">
+                    <span style="text-decoration: underline;" class="title"></span>,
+                    </a>
+                </span>
                 <span class="author"></span>
             </div>
 
@@ -39,7 +43,6 @@
                 </div>
             </div>
             <div id="bibtex_display">
-
             </div>
         </div>
 
