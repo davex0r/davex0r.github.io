@@ -2,51 +2,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
 `        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<html lang="en">
+
+    <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publications</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="bibtex_js.js" type="text/javascript" charset="utf-8"></script>
-    <bibtex src="veloso.bib"></bibtex>
-
-    <script>
-		$(function() {
-		  $("#Fontselector").on("change",function() {
-		    var font = $("#Fontselector option:selected").text();
-		    console.log(font);
-
-		    $('.title.fonters').each(function() {
-		    	$(this).css("font-family",font);
-		    });
-		  });
-		});
-		function reset() {
-			$("select").each(function () {
-			  localStorage.setItem($(this).attr("id"),"");
-			  $(this).val("");
-			});
-			$("#searchbar").val("");
-			$("#searchbar").trigger('change');
-		}
-		function resetOtherFilters(changedId) {
-  $("select").each(function() {
-    if ($(this).attr("id") !== changedId) {
-      $(this).val("");
-    }
-  });
-  $("#searchbar").val("");
-}
-
-$("#authorselectfirst, #authorselect").on("change", function() {
-  resetOtherFilters($(this).attr("id"));
-  $(this).trigger('change');
-});
-
-    </script>
 </head>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
+<bibtex src="publications.bib"></bibtex>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
 <body>
     <div class="container">
         <div class="sidebar">
@@ -59,6 +26,9 @@ $("#authorselectfirst, #authorselect").on("change", function() {
         <div class="content">
             <h1>Publications</h1>
             <p>This is the Publications page. You can list your publications or articles here.</p>
+            <div class="bibtex_template">
+                <span class="year"></span>
+            </div>
         </div>
 
     </div>
