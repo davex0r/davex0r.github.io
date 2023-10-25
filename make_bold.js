@@ -4,7 +4,6 @@ window.onload = function() {
 
     // Replace the word "sample" with "<strong>sample</strong>"
     let newText = text.replace(/David/g, "<strong>$&</strong>");
-    let newText = text.replace(/Jordan/g, "<strong>$&</strong>");
 
     contentDiv.innerHTML = newText;
 }
