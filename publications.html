@@ -1,67 +1,71 @@
 <!-- publications.html -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-`        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  ` "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primary Publications</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primary Publications</title>
 
-    <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.js"></script>
 <bibtex src="publications.bib"></bibtex>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <img src="your-image.jpg" alt="Profile Image" width="200" height="200">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="publications.html" class="active">Publications</a>
-        </div>
+  <div class="container">
+    <div class="sidebar">
+      <img src="your-image.jpg" alt="Profile Image" width="200" height="200">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="publications.html" class="active">Publications</a>
+    </div>
 
-        <div class="content">
-            <h1>Primary Publications</h1>
-            <p>This is the Publications page.</p>
-            <div style="padding-bottom:20px;"></div>
-            
-            <div class="bibtex_template">
-              <ul>
-                <li>
-                <div style="margin-left: 10px; margin-bottom:5px;">
-                  <a class="bibtexVar" href="+URL+" extra="url">  
-                    <span style="text-decoration: underline;" class="title"></span>,
-                    </a>
-                    <div class="if author">
-                      <span class="author"></span>
-                    </div>
-                    <div>
-                      <em><span class="journal"></span></em>
-                      <span class="if volume"><span class="volume" style="font-weight: bold;"></span>,</span>
-                      <span class="if number">(<span class="number"></span>)</span>
-                      <span class="if pages"><span class="pages"></span>,</span>
-                      <span class="if month"><span class="month"></span></span>
-                      <span class="if year"><span class="year"></span>.</span>
-                    </div>
-                </div>
-              </li>
-              </ul>
+    <div class="content">
+      <h1>Primary Publications</h1>
+      <p>This is the Publications page.</p>
+      <div style="padding-bottom:20px;"></div>
+
+      <div class="bibtex_template">
+        <ul>
+          <li>
+            <span class="if keywords==primary">
+            <div style="margin-left: 10px; margin-bottom:5px;">
+              <a class="bibtexVar" href="+URL+" extra="url">
+                <span style="text-decoration: underline;" class="title"></span>,
+              </a>
+              <div class="if author">
+                <span class="author"></span>
               </div>
-              <div class="bibtex_structure">
-                <div class="group year" extra="DESC number">
-                    <h2 class="title"></h2>
-                    <div style="padding-bottom:5px;"></div>
-                    <div class="templates"></div>
-                </div>
-            </di>
-        </div>
-
-            <div id="bibtex_display">
+              <div>
+                <em><span class="journal"></span></em>
+                <span class="if volume"><span class="volume" style="font-weight: bold;"></span>,</span>
+                <span class="if number">(<span class="number"></span>)</span>
+                <span class="if pages"><span class="pages"></span>,</span>
+                <span class="if month"><span class="month"></span></span>
+                <span class="if year"><span class="year"></span>.</span>
+              </div>
             </div>
+            </span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bibtex_structure">
+        <div class="group year" extra="DESC number">
+          <h2 class="title"></h2>
+          <div style="padding-bottom:5px;"></div>
+          <div class="templates"></div>
+        </div>
+        </di>
+      </div>
+
+      <div id="bibtex_display">
+      </div>
 
     </div>
 </body>
+
 </html>
