@@ -50,6 +50,11 @@ body {
     padding: 20px;
 }
 
+[class="First Last"] {
+    font-size: 20px;
+    text-decoration: underline;
+  }
+
 /* Responsive design for screens smaller than 768px (typical mobile phones) */
 @media (max-width: 768px) {
     .container {
