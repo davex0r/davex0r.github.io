@@ -3,7 +3,8 @@ window.onload = function() {
     let text = contentDiv.innerHTML;
 
     // Replace the word "sample" with "<strong>sample</strong>"
-    let newText = text.replace(/David Jordan/g, "<strong>$&</strong>");
+    let newText = text.replace(/David/g, "<strong>$&</strong>");
+    let newText = text.replace(/Jordan/g, "<strong>$&</strong>");
 
     contentDiv.innerHTML = newText;
 }
