@@ -54,7 +54,7 @@ body {
     font-weight: bold;
   }
 
-a:visited {
+.content a:visited {
     color: blue;
   }
 
