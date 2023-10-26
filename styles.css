@@ -90,6 +90,11 @@ body {
     margin-bottom: 10px;
 }
 
+.entry div {
+    flex: 1;
+    padding: 0 10px;
+}
+
 .entry .vertical-line {
     width: 1px;
     height: 100%;
