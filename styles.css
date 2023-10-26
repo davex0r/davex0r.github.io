@@ -90,6 +90,13 @@ body {
     margin-bottom: 10px;
 }
 
+.entry .vertical-line {
+    width: 1px;
+    height: 100%;
+    background-color: #747474;
+    flex: initial;
+}
+
 /* Responsive design for screens smaller than 768px (typical mobile phones) */
 @media (max-width: 768px) {
     .container {
