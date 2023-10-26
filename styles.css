@@ -77,6 +77,17 @@ body {
     font-size: 24px; /* adjust size as needed */
 }
 
+.section-title {
+    font-weight: bold;
+    border-bottom: 2px solid black;
+    margin-bottom: 20px;
+}
+.entry {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
 /* Responsive design for screens smaller than 768px (typical mobile phones) */
 @media (max-width: 768px) {
     .container {
