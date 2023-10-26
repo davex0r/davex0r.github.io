@@ -79,8 +79,10 @@ body {
 
 .section-title {
     font-weight: bold;
+    font-size: 1.5em;
     border-bottom: 2px solid black;
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 .entry {
     display: flex;
