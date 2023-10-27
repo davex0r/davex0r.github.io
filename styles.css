@@ -131,7 +131,7 @@ div i.fas {
     .sidebar {
         width: 100%; /* Make the sidebar take the full width of the screen */
         max-height: 45vh;
-        padding: 10px; /* Reduce padding for smaller screens */
+        padding: 0px; /* Reduce padding for smaller screens */
     }
 
     .sidebar img {
