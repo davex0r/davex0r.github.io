@@ -102,13 +102,13 @@
 			<figcaption style="grid-column: kicker">
 			      <p>
 							Figure 1. Here we can visualize using symmetry transformations to reduce the number of parameters from the naive representation.  Given any triangle (a,blue) we can first translate it to have a vertex at the origin (orange).  This reduces from 6 parameters to 4.  Next (b) we can define a rotation to bring one edge to lay along the x-axis (yellow).  Finally (c), we can scale this edge to have unit length (purple).<d-footnote>Start with any triangle given by three points <d-math>(x_1,y_1),(x_2,y_2),(x_3,y_3)</d-math>.  First translate by subtracting <d-math>(x_1,x_2)</d-math> from each point resulting in  <d-math>(0,0),x_2-x_1,y_2-y_1),(x_3-x_1,y_3-y_1)</d-math>.  Next we can define a rotation matrix to align one edge with the x-axis.  If <d-math>s=\sqrt{(x_2-x_1)^2+(y_2-y_1)^2)}</d-math>
-								<dt-math block="">
+								<d-math block="">
       						T =\frac{1}{s}
 									\begin{bmatrix}
 									(x_2-x_1) & (y_2-y_1) \\
 									-(y_2-y_1) & (x_2-x_1)
 									\end{bmatrix}
-  							</dt-math>
+  							</d-math>
 						If we let <d-math>x_i^{\prime}=(x_i-x_1)</d-math> and likewise for y, after rotation the coordinates are
 
 						<d-math block = "">
