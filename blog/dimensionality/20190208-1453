@@ -1,0 +1,30 @@
+Dimensionality Review
+
+Dimensionality Reduction
+  Introduction to Dimensionality Reduction
+    Triangle space
+      Proportion of acute triangles
+      Expectation, models of randomness, and uniform distributions
+      Learning a space from data
+        Procrustes Transformation
+        Similar Triangles (Shape Space vs. Size)
+      Locality
+      Trajectories
+  Phenotypic Spaces (Morphospaces (Seashells, Antigen Shape Space))
+    Morphospaces - D'arcy Thmopson (Growth and Form)
+    Seashells - Raup
+    Influenza shape space
+  Behavioral Spaces (Eigenworms, Posture Space)
+    Original Eigenworms paper (greg)
+    Hierachrcal compression paper (andre) (ethology as physical science)
+    My Paper (Tetrahymena)
+  Dimensionality Reduction Techniques
+    Back to triangle space (PCA, surface of sphere)
+    Distance Metrics
+    Embedding (PCA, MDS, non-linear methods (LLE, isomap, t-SNE, diffusion maps))
+  Pareto Optimality and Pareto Fronts
+    Pareto optimality, generalist, specialist, pareto front
+Dimensionality Expansion
+  Classification and Learning - Kernel SVM
+  Computation (Function Generation, BingKan Paper)
+  Prediction and Control (Koopman Operator)
