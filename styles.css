@@ -121,6 +121,36 @@ div i.fas {
     align-items: center;     /* Vertically center */
   }
 
+  .content-area {
+    width: 300px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+  }
+
+  .expandable {
+    padding: 10px 20px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    margin: 5px 0;
+    user-select: none;
+  }
+
+  .expandable:hover {
+    cursor: pointer;
+    background-color: #ddd;
+  }
+
+  /* This max-height is arbitrary. It needs to be larger than the content's natural height. */
+  .content-area.expanded {
+    padding: 20px;
+    max-height: 2000px; /* Adjust this value based on the content's height */
+  }
+
+
 
 /* Responsive design for screens smaller than 768px (typical mobile phones) */
 @media (max-width: 768px) and (orientation: portrait) {
