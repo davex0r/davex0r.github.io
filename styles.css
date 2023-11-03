@@ -130,6 +130,12 @@ div i.fas {
     transition: max-height 0.5s ease-in-out;
     max-height: 0;
   }
+  .content-area p {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 20px;
+    text-align: justify;
+  }
 
   .expandable {
     padding: 10px 20px;
