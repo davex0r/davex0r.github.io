@@ -1,6 +1,6 @@
 // script.js
-function toggleContent() {
-  var content = document.getElementById('expandableContent');
+function toggleContent(contentID) {
+  var content = document.getElementById(contentID);
   if (content.style.maxHeight) {
     content.style.maxHeight = null;
   } else {
