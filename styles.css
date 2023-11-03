@@ -157,6 +157,20 @@ div i.fas {
     max-height: 2000px; /* Adjust this value based on the content's height */
   }
 
+  .collapse-button {
+    display: block;
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin-top: 10px;
+  }
+
+  .collapse-button:hover {
+    background-color: #c9302c;
+  }
 
 
 /* Responsive design for screens smaller than 768px (typical mobile phones) */
