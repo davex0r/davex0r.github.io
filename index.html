@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
+    <script src="https://distill.pub/template.v2.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script src="scripts.js"></script>
 </head>
@@ -35,7 +36,7 @@
     <div class="expandable" onclick="toggleContent('expandableContent1')">Discrimination in out of equilibrium chemical networks</div>
     <div class="content-area" id="expandableContent1">
       <p>Chemical systems in isolation will approach thermodynamic equilibrium, a unique steady state with no net flows of matter or energy. In biology, thermodynamic equilibrium is synonymous with death and systems must avoid it by continuously spending energy; staying out of equilibrium is a principle of life. At the molecular scale, one way energy is spent is to ensure that one molecule reacts specifically with its correct partner.  Such accurate discrimination is essential for processes such as translation, where the correct tRNA must be selected to ensure the fidelity of the resulting protein.</p>
-      <p>One fundamental question is why large multicomponent protein complexes often form around the specific interaction of two molecules.  One proposal from equilibrium considerations is that each complex forms a sort of molecular memory state and that by tuning the interactions between subunits, memories can be recalled from smaller seed complexes.  Some recent work I have done with Gaurav Venkataraman proposed a complementary perspective from a non-equilibrium point of view. We discovered that complex formation may serve as an out-of-equilibrium discrimination mechanism where the spending of free energy is used to increase the specificity of the interaction using either binding energy differences, i.e., Hopfield's kinetic proofreading, or activation energy differences. We found that one or the other of these mechanisms is favoured depending on whether complex formation occurs in a processive or distributive manner.</p>
+      <p>One fundamental question is why large multicomponent protein complexes often form around the specific interaction of two molecules.  One proposal<d-cite key="Sartori2020-vp"></d-cite> from equilibrium considerations is that each complex forms a sort of molecular memory state and that by tuning the interactions between subunits, memories can be recalled from smaller seed complexes.  Some recent work I have done with Gaurav Venkataraman proposed a complementary perspective from a non-equilibrium point of view. We discovered that complex formation may serve as an out-of-equilibrium discrimination mechanism where the spending of free energy is used to increase the specificity of the interaction using either binding energy differences, i.e., Hopfield's kinetic proofreading, or activation energy differences. We found that one or the other of these mechanisms is favoured depending on whether complex formation occurs in a processive or distributive manner.</p>
       <p>We quantified this with what we call orthogonality and show how this quantity can be used to predict when complexes are likely to achieve accuracy by processive assembly versus distributive assembly. We also showed how changing the propensity of a single reaction, such as phosphorylating a component, can shift the assembly between these two regimes.  Our results predict that distributive complex formation should be more dissipative, rely on decreased kinetic barriers, and involve molecules with many heterogeneous multivalent interactions.  These properties are interestingly often associated with phase-separated granules, and I would like to investigate the potential for these to serve as computational centres in the cell.</p>
       <div class="collapse-button" onclick="toggleContent('expandableContent1')">Click to Collapse</div>
     </div>
@@ -69,5 +70,14 @@
       <p>We propose that this phenomenon of concentration of dimension may not be unique to nematode growth, but rather a feature of biological systems in general, providing a mechanism for both robustness and flexibility.  We are currently working to develop a  framework based on projection operator theory from statistical mechanics to describe how this phenomenon may arise.</p>
       <div class="collapse-button" onclick="toggleContent('expandableContent3')">Click to Collapse</div>
     </div>
+
+    <div class="expandable" onclick="toggleContent('expandableContent6')">References</div>
+    <div class="content-area" id="expandableContent6">
+      <d-bibliography src="bibliography.bib"></d-bibliography>
+    
+      <script type="text/javascript" src="index.bundle.js"></script>
+      <div class="collapse-button" onclick="toggleContent('expandableContent6')">Click to Collapse</div>
+    </div>
+
 </body>
 </html>
