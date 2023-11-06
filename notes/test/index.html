@@ -1145,7 +1145,7 @@
         <p><em>
                 This article is ...
                 <a href="https://citationlink">Citation Title</a>
-                <d-cite key="citekey1"></d-cite>
+                <d-cite key="theobald2010formal"></d-cite>
             </em></p>
         <p id="introduction">
             Blah
@@ -1169,7 +1169,8 @@
     <p>
         Blah
     </p>
-    Blah
+    <p>
+        Blah
     </p>
 
     <h3>Author Contributions</h3>
@@ -1185,28 +1186,6 @@
         <a href="url3">Review 3 - Anonymous</a><br>
     </p>
 
-    <d-citation-list distill-prerendered="true">
-        <style>
-            d-citation-list {
-                contain: style;
-            }
-
-            d-citation-list .references {
-                grid-column: text;
-            }
-
-            d-citation-list .references .title {
-                font-weight: 500;
-            }
-        </style>
-        <h3 id="references">References</h3>
-        <ol id="references-list" class="references">
-            <li id="citekey1"><span class="title">Sample Citation Title</span>
-                <br>Doe, Jane and Doe, Jon, Date. Journal. <a
-                    href="url1" style="text-decoration:inherit;">DOI:
-                    XXXX</a></li>
-        </ol>
-    </d-citation-list>
     <distill-appendix>
         <style>
             distill-appendix {
@@ -1252,14 +1231,14 @@
         <pre class="citation short">Jordan, D, "Post Title", Blog Name, Date.</pre>
         <p>BibTeX citation</p>
         <pre class="citation long">@article{citekey,
-  author = {Jordan, David},
-  title = {Title},
-  journal = {Journal},
-  year = {Year},
-  note = URL,
-  doi = {DOI}
-}</pre>
+            author = {Jordan, David},
+            title = {Title},
+            journal = {Journal},
+            year = {Year},
+            note = URL,
+            doi = {DOI}
+        }</pre>
+        <d-bibliography src="./dimensionality_review.bib"></d-bibliography>
     </distill-appendix>
-    <d-bibliography src="./dimensionality_review.bib"></d-bibliography>
 </d-appendix>
 
