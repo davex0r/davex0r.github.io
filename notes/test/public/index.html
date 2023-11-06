@@ -289,6 +289,59 @@
     </p>
 
     <d-citation-list></d-citation-list>
+
+    <distill-appendix>
+      <style>
+        distill-appendix {
+          contain: layout style;
+        }
+    
+        distill-appendix .citation {
+          font-size: 11px;
+          line-height: 15px;
+          border-left: 1px solid rgba(0, 0, 0, 0.1);
+          padding-left: 18px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          background: rgba(0, 0, 0, 0.02);
+          padding: 10px 18px;
+          border-radius: 3px;
+          color: rgba(150, 150, 150, 1);
+          overflow: hidden;
+          margin-top: -12px;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+        }
+    
+        distill-appendix>* {
+          grid-column: text;
+        }
+      </style>
+    
+      <h3 id="updates-and-corrections">Updates and Corrections</h3>
+      <p>
+        If you see mistakes or want to suggest changes, please <a
+          href="https://github.com/davex0r/davex0r.github.io/issues">create an issue on GitHub</a>. </p>
+    
+      <h3 id="reuse">Reuse</h3>
+      <p>Diagrams and text are licensed under Creative Commons Attribution <a
+          href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> with the <a class="github"
+          href="https://github.com/davex0r/davex0r.github.io/">source available on GitHub</a>, unless noted
+        otherwise. The figures that have been reused from other sources don’t fall under this license and can be recognized
+        by a note in their caption: “Figure from …”.</p>
+    
+      <h3 id="citation">Citation</h3>
+      <p>For attribution in academic contexts, please cite this work as</p>
+      <pre class="citation short">Jordan, David, "Post Title", Blog Name, Date.</pre>
+      <p>BibTeX citation</p>
+      <pre class="citation long">@article{postCiteKey,
+            author = {Jordna, David},
+            title = {Post Title},
+            journal = {Blog Name},
+            year = {Year},
+            note = {https://www.livingphysics.org/notes/thispage},
+            doi = {DOI}
+          }</pre>
+    </distill-appendix>
   </d-appendix>
 
   <!-- bibliography will be inlined during Distill pipeline's pre-rendering -->
