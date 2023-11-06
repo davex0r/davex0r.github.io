@@ -1185,9 +1185,34 @@
         <a href="url2">Review 2 - </a><br>
         <a href="url3">Review 3 - Anonymous</a><br>
     </p>
+<d-citation-list distill-prerendered="true">
+    <style>
+        d-citation-list {
+            contain: style;
+        }
+        
+        d-citation-list .references {
+            grid-column: text;
+        }
+        
+        d-citation-list .references .title {
+            font-weight: 500;
+        }
+    </style>
+    <h3 id="references">References</h3>
+    <ol id="references-list" class="references">
+        <li id="Rasmussen2004">
+            <span class="title">Invariant visual representation by single neurons in the human brain</span>
+            <a href="http://amygdala.psychdept.arizona.edu/IntroData/Readings/week5/Quiroga-reddy-kreiman-koch-Fried+invariant-visual-single-neurons-human+Nature+2005.pdf">[PDF]</a>
+            <br>Quiroga, R.Q., Reddy, L., Kreiman, G., Koch, C. and Fried, I., 2005. Nature, Vol 435(7045), pp. 1102--1107. Nature Publishing Group.</br>
+        </li>
+    </ol>
+</d-citation-list>
 
  <d-bibliography><script type="text/json">[["Rasmussen2004",{"author":"Carl Edward Rasmussen","title":"Gaussian Processes in Machine Learning","booktitle":"Advanced Lectures on Machine Learning","publisher":"Springer Berlin Heidelberg","year":"2004","pages":"63--71","doi":"10.1007/978-3-540-28650-9_4","url":"http://www.gaussianprocess.org/gpml/chapters/RW.pdf","type":"InCollection"}]]</script></d-bibliography>
 
+
+ 
     <distill-appendix>
         <style>
             distill-appendix {
