@@ -1,3 +1,7 @@
+d-contents {
+    padding-bottom: 3em;
+}
+
 @media (min-width: 1000px) {
     d-contents {
       align-self: start;
