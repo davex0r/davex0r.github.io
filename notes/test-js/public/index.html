@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <title>Post Title</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=1200">
+  <script src="https://distill.pub/template.v2.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+	<script src="https://unpkg.com/d3-simple-slider"></script>
+  <script src="js_scripts/fminsearch.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <d-front-matter>
+    <script type="text/json">
+      {
+    "title": "Post Title",
+    "description": "Post Description.",
+    "authors": [
+        {
+            "author": "David Jordan",
+            "authorURL": "https://www.livingphysics.org/",
+            "affiliation": "Cambridge University",
+            "affiliationURL": "https://www.cam.ac.uk/"
+        }
+    ],
+    "katex": {
+        "delimiters": [
+            {
+                "left": "$",
+                "right": "$",
+                "display": false
+            },
+            {
+                "left": "$$",
+                "right": "$$",
+                "display": true
+            }
+        ]
+    }
+}
+    </script>
+  </d-front-matter>
+
+  <d-title>
+    <h1>Post Title</h1>
+    <p>Post Description.</p>
+  </d-title>
+
+  <d-article>
+    <d-contents>
+      <nav class="l-text figcaption">
+        <h3>Contents</h3>
+        <div><a href="#introduction">Introduction</a></div>
+        <div><a href="#topic1">Topic 1</a></div>
+        <ul>
+          <li><a href="#subtopic1">Subtopic 1</a></li>
+          <li><a href="#subtopic2">Subtopic 2</a></li>
+          <li><a href="#subtopic3">Subtopic 3</a></li>
+        </ul>
+        <div><a href="#further-reading">Conclusions and Further Reading</a></div>
+      </nav>
+    </d-contents>
+    <div>
+      <p><em>
+        This article is ...
+        Take a look at
+        <d-cite key="theobald2010formal"></d-cite>
+        for a companion view.
+      </em></p>
+      <p id="introduction">
+        Introduction
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <d-math block="">
+        T =\frac{1}{s}
+        \begin{bmatrix}
+        (x_2-x_1) & (y_2-y_1) \\
+        -(y_2-y_1) & (x_2-x_1)
+        \end{bmatrix}
+      </d-math>
+    <div class = "l-body" id="grid"></div>
+		<script type="text/javascript" src="js_scripts/apex.js"></script>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <aside>The planar space of base width and height for isosceles triangles.</aside>
+    <svg width="100%" height="400" id="new_tps"></svg>
+
+		<aside markdown="1">A simple parameterization of triangular space using the lengths of two sides and the angle between them.  The lenghts here are limited, but should properly be <d-math>[0,\infty]</d-math>.  If we constrain the traingles to have a constant area, the three parameters are no longer independent, as <d-math>A=l_1l_2sin(\theta)</d-math></aside>
+
+		<div>
+		  <input type="checkbox" id="myCheckbox">
+		  <label for="myCheckBox">Constant Area</label>
+		  <br><br>
+		  <button type="button" id="button1">Reset</button>
+		  <br><br>
+		</div>
+
+		<script type="text/javascript" src="js_scripts/new_tps.js"></script>
+    <h2 id="further-reading">
+      Conclusion and Further Reading
+    </h2>
+      
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <d-cite key="edelman2015random"></d-cite> for a more comprehensive survey.
+      </p>
+      <p>
+        We end with pointers and references for additional concepts readers might be interested in:
+      </p>
+
+  </d-article>
+
+
+  <d-appendix id="appendix">
+    
+    <d-footnote-list></d-footnote-list>
+    <h3>Acknowledgments</h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+      
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </p>
+    <p>
+      Finally, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    </p>
+
+    <h3>Author Contributions</h3>
+    <p>
+      <b>David Jordan</b> drafted most of the text, designed experiments and created the interactive visualizations in this article.
+    </p>
+
+    <h3>Discussion and Review</h3>
+    <p>
+      <a href="url1">Review 1 - </a><br>
+      <a href="url2">Review 2 - </a><br>
+      <a href="url3">Review 3 - Anonymous</a><br>
+    </p>
+
+    <d-citation-list></d-citation-list>
+
+    <h3 id="updates-and-corrections">Updates and Corrections</h3>
+    <p>
+      If you see mistakes or want to suggest changes, please <a
+        href="https://github.com/davex0r/davex0r.github.io/issues">create an issue on GitHub</a>. </p>
+    
+    <h3 id="reuse">Reuse</h3>
+    <p>Diagrams and text are licensed under Creative Commons Attribution <a
+        href="https://creativecommons.org/licenses/by/4.0/">CC-BY 4.0</a> with the <a class="github"
+        href="https://github.com/davex0r/davex0r.github.io/">source available on GitHub</a>, unless noted
+      otherwise. The figures that have been reused from other sources don’t fall under this license and can be recognized
+      by a note in their caption: “Figure from …”.</p>
+    
+    <h3 id="citation">Citation</h3>
+    <p>For attribution in academic contexts, please cite this work as</p>
+    <pre class="citation short">Jordan, David, "Post Title", Blog Name, Date.</pre>
+    <p>BibTeX citation</p>
+    <pre class="citation long">@article{postCiteKey,
+                author = {Jordan, David},
+                title = {Post Title},
+                journal = {Blog Name},
+                year = {Year},
+                note = {https://www.livingphysics.org/notes/thispage},
+                doi = {DOI}
+              }</pre>
+  </d-appendix>
+
+  <!-- bibliography will be inlined during Distill pipeline's pre-rendering -->
+  <d-bibliography src="bibliography.bib"></d-bibliography>
+
+<script type="text/javascript" src="index.bundle.js"></script>
+</body>
+</html>
