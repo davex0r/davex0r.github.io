@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>European Worm Meeting 2024</title>
+    <title>Responsive Scrollable Slides</title>
     <style>
         body, html {
             margin: 0;
             padding: 0;
-            height: 90%;
+            height: 100%;
+            font-family: Arial, sans-serif;
         }
         #slideContainer {
-            height: 90vh;
+            height: 100vh;
             overflow-y: scroll;
             scroll-snap-type: y mandatory;
         }
@@ -22,27 +23,58 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+            padding: 20px;
+            box-sizing: border-box;
         }
-        .slide img {
-            width: 100%;
-            height: auto;
-            max-height: 100vh;
+        .slide img, .slide video {
+            width: 90%;
+            max-width: 90vw;
+            max-height: 70vh;
             object-fit: contain;
         }
         .content {
-            position: absolute;
-            bottom: 20px;
-            left: 20px;
-            right: 20px;
+            width: 100%;
             text-align: center;
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
             border-radius: 5px;
+            margin-top: 20px;
         }
         h2 {
             margin-top: 0;
+        }
+        .text-slide {
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: left;
+            overflow-y: auto;
+        }
+        .text-slide h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .text-slide p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .text-slide a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .text-slide a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-height: 600px) {
+            .slide {
+                height: auto;
+                min-height: 100vh;
+            }
+            .slide img, .slide video {
+                max-height: 50vh;
+            }
         }
     </style>
 </head>
