@@ -78,14 +78,21 @@
         .text-slide a:hover {
             text-decoration: underline;
         }
-
-        @media (max-height: 600px) {
+      @media (max-width: 768px) {
             .slide {
                 height: auto;
                 min-height: 100vh;
             }
-            .slide img, .slide video {
-                max-height: 50vh;
+            .media-container {
+                flex-direction: column;
+                height: auto;
+            }
+            .media-container img, .media-container video {
+                width: 100%;
+                max-width: 100%;
+                height: auto;
+                max-height: 40vh;
+                margin-bottom: 10px;
             }
         }
     </style>
