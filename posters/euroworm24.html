@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Slides with Adjacent Image and Video</title>
+    <title>Responsive Scrollable Slides</title>
     <style>
         body, html {
             margin: 0;
@@ -27,17 +27,10 @@
             padding: 20px;
             box-sizing: border-box;
         }
-        .media-container {
-            display: flex;
-            width: 100%;
-            height: 80vh;
-            justify-content: center;
-            align-items: center;
-        }
-        .media-container img, .media-container video {
-            height: 100%;
-            width: auto;
-            max-width: 50%;
+        .slide img, .slide video {
+            width: 90%;
+            max-width: 90vw;
+            max-height: 70vh;
             object-fit: contain;
         }
         .content {
@@ -52,18 +45,35 @@
         h2 {
             margin-top: 0;
         }
+        .text-slide {
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: left;
+            overflow-y: auto;
+        }
+        .text-slide h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+        .text-slide p {
+            margin-bottom: 15px;
+            line-height: 1.6;
+        }
+        .text-slide a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        .text-slide a:hover {
+            text-decoration: underline;
+        }
 
-        @media (max-width: 768px) {
-            .media-container {
-                flex-direction: column;
+        @media (max-height: 600px) {
+            .slide {
                 height: auto;
+                min-height: 100vh;
             }
-            .media-container img, .media-container video {
-                width: 100%;
-                max-width: 100%;
-                height: auto;
-                max-height: 40vh;
-                margin-bottom: 10px;
+            .slide img, .slide video {
+                max-height: 50vh;
             }
         }
     </style>
@@ -112,13 +122,11 @@
             </video>
         </div>
         <div class="slide">
-         <div class="media-container">
             <img src="./euroworm24_assets/virtualposter.008.jpeg" alt="Slide 2 image">
             <video controls>
                 <source src="./euroworm24_assets/project_traj_celegans.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            </div>
         </div>
         <div class="slide">
             <h2>Thanks!</h2>
