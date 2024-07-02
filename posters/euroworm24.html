@@ -26,6 +26,7 @@
             justify-content: space-between;
             padding: 20px;
             box-sizing: border-box;
+            border: 2px solid black; /* Added black border */
         }
         .slide img, .slide video {
             width: 90%;
@@ -39,12 +40,21 @@
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
+            padding: 10px;
         }
-        .media-container img, .media-container video {
+        .media-container img {
             max-width: 100%;
             max-height: 45vh;
             object-fit: contain;
             margin: 10px;
+        }
+        .media-container video {
+            max-width: 100%;
+            width: 640px; /* Set a specific width for the video */
+            max-height: 45vh;
+            object-fit: contain;
+            margin: 10px;
+        }
             
        .content {
             width: 100%;
