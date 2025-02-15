@@ -200,7 +200,7 @@ div i.fas {
         padding: 0px; /* Reduce padding for smaller screens */
         margin-right:5px;
     }
-    .outer-div {
+    .sidebar > .outer-div {
       position: relative;
     }
     .sidebar > a {
