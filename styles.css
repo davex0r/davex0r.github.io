@@ -198,20 +198,19 @@ div i.fas {
     .sidebar {
         width: 100%;
         height: auto;
-        position: relative;
+        position: sticky;
+        position: -webkit-sticky;
         padding: 0;
         margin: 0;
         display: flex;
         flex-direction: column;
-        overflow: visible;
-        background-color: transparent;
+        overflow: hidden;
     }
 
     .outer-div {
         width: 100%;
         background-color: #919191;
         padding: 10px 0;
-        position: relative;
     }
 
     .circular-frame {
@@ -237,7 +236,7 @@ div i.fas {
 
     .content {
         padding: 15px;
+        margin-top: 10px;
         position: relative;
-        z-index: 1;
     }
 }
