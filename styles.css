@@ -199,6 +199,7 @@ div i.fas {
         max-height: 45vh;
         padding: 0px; /* Reduce padding for smaller screens */
         margin-right:5px;
+        position: relative;
     }
     .sidebar > .outer-div {
       position: relative;
