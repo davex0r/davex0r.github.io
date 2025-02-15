@@ -198,7 +198,8 @@ div i.fas {
     .sidebar {
         width: 100%;
         height: auto;
-        position: relative;
+        position: sticky;
+        position: -webkit-sticky;
         padding: 0;
         margin: 0;
         display: flex;
