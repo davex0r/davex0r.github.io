@@ -200,7 +200,15 @@ div i.fas {
         padding: 0px; /* Reduce padding for smaller screens */
         margin-right:5px;
     }
-
+    .outer-div {
+      position: relative;
+    }
+    .sidebar > a {
+      position: sticky;
+      top: 0;
+      background-color: #919191;
+      z-index: 1;
+    }
     .sidebar img {
         margin-bottom: 10px; /* Adjust spacing */
     }
